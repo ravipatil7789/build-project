@@ -11,7 +11,7 @@ phases:
       - npm update
   build:
     commands:
-      - npm cache clean
+      - npm test
    post_build:
     commands:
       - echo "Build completed successfully!"
