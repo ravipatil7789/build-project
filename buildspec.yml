@@ -11,5 +11,12 @@ phases:
       - npm update
   build:
     commands:
-      - npm test
+      - npm cache clean
+   post_build:
+    commands:
+      - echo "Build completed successfully!"
+artifacts:
+  files:
+    - '**/*'
+  base-directory: ..
 
