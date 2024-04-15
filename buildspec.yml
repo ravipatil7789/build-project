@@ -6,8 +6,12 @@ phases:
       nodejs: 14
   pre_build:
     commands:
+      - npm init
       - npm install
-      - npm enable
+      - npm install lodash --save
+      - npm update
+      - npm run package.json
+      - npm start
   build:
     commands:
       - npm test
